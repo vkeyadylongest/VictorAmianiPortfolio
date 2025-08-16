@@ -8,71 +8,219 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-     <header class="hero">
-    <nav class="navbar">
-      <h1 class="logo">Victor Amiani</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h2>They call me Victor. I build the web the way a king carves his empire, line by line, flawlessly.</h2>
-      <h3><span class="typed"></span></h3>
-      <p>To call it passion would be an understatement; I breathe structure, and I solve chaos with elegance.</p>
-      <a href="#projects" class="cta">Step into the world I’ve crafted, one line of code at a time.</a>
-    </div>
-  </header>
-    <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am a self-taught front-end developer forged through discipline, not classrooms — with certifications in Responsive Web Design and JavaScript Algorithms. I craft interfaces with precision and solve problems the way a strategist ends wars — swiftly and with intention.</p>
-  </section>
-   <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Tribute Page</h3>
-        <p>A seamless homage rendered in clean code—HTML and CSS woven together to honor structure and simplicity.</p>
-        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Palindrome Checker</h3>
-        <p>Built with pure logic, this project unmasks palindromes with surgical precision.</p>
-        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
-      </div>
-    </div>
-  </section>
-   <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML5</li>
-      <li>CSS3 (Flexbox, Grid, Media Queries)</li>
-      <li>JavaScript (ES6+)</li>
-      <li>DOM Manipulation</li>
-      <li>Git & GitHub</li>
-      <li>Responsive Web Design</li>
-      <li>Algorithms & Data Structures</li>
-    </ul>
-  </section>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>If you seek collaboration worthy of precision and intent, speak, and I will answer.</p>
-    <ul class="contact-links">
-      <li>Email: <a href="mailto:victor.amiani.k@gmail.com">victor.amiani.k@gmail.com</a></li>
-      <li><a href="https://github.com/vkeyadylongest" target="_blank" rel="noopener noreferrer">
-    Visit my GitHub Profile
-</a></a></li>
+
+
+<body>
+  <header class="hero">
+  <nav class="navbar">
+    <h1 class="logo">Victor Amiani</h1>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
-    <footer class="footer">
-        <p>&copy; 2025 Victor Amiani. All rights reserved.</p>  
-    <p>Crafted through obsession, not chance.</p>
-    </footer>
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2>They call me Victor. I build the web the way a king carves his empire, line by line, flawlessly.</h2>
+      <h3 class="typed-container"><span class="typed"></span></h3>
+      <p>To call it passion would be an understatement; I breathe structure, and I solve chaos with elegance.</p>
+    </div>
+    <a href="#projects" class="cta">
+      <span>Step into the world I've crafted</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow-down"></div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <div class="about-container">
+    <div class="about-content">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <p>I am a self-taught front-end developer forged through discipline, not classrooms — with certifications in Responsive Web Design and JavaScript Algorithms. I craft interfaces with precision and solve problems the way a strategist ends wars — swiftly and with intention.</p>
+      <div class="certification-badges">
+        <div class="badge">
+          <i class="fas fa-certificate"></i>
+          <span>Responsive Web Design</span>
+        </div>
+        <div class="badge">
+          <i class="fas fa-certificate"></i>
+          <span>JS Algorithms</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-decoration">
+      <div class="decoration-circle"></div>
+      <div class="decoration-line"></div>
+    </div>
+  </div>
+</section>
+   
+  <section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+
+    <!-- To-Do List Project -->
+    <div class="project-card">
+      <h3>To-Do List</h3>
+      <p>A dynamic task manager with local storage persistence, built with pure JavaScript.</p>
+      <div class="project-links">
+        <a href="https://vkeyadylongest.github.io/to-do-list/" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="project-link">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+        <span class="link-separator">|</span>
+        <a href="https://github.com/vkeyadylongest/to-do-list" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="project-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Calculator Project -->
+    <div class="project-card">
+      <h3>Calculator</h3>
+      <p>A fully functional calculator with keyboard support, built with vanilla JavaScript.</p>
+      <div class="project-links">
+        <a href="https://vkeyadylongest.github.io/calculator/" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="project-link">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+        <span class="link-separator">|</span>
+        <a href="https://github.com/vkeyadylongest/calculator" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="project-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--skills-->
+<section id="skills" class="section">
+  <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+  <div class="skills-carousel-container">
+    <div class="skills-carousel">
+      <!-- Duplicate these for seamless looping -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <h3>HTML5</h3>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <h3>CSS3</h3>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <h3>Git</h3>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <h3>React</h3>
+      </div>
+
+      <!-- Duplicates -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <h3>HTML5</h3>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <h3>CSS3</h3>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <h3>Git</h3>
+      </div>
+
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <h3>React</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- contact section -->
+  <section id="contact" class="section">
+  <h2><i class="fas fa-envelope"></i> Contact</h2>
+  <p class="contact-subtitle">If you seek collaboration worthy of precision and intent, speak, and I will answer.</p>
+  
+  <div class="contact-container">
+    <ul class="contact-links">
+      <li class="contact-item">
+        <i class="fas fa-envelope contact-icon"></i>
+        <a href="mailto:victor.amiani.k@gmail.com" class="contact-link">victor.amiani.k@gmail.com</a>
+      </li>
+      <li class="contact-item">
+        <i class="fab fa-github contact-icon"></i>
+        <a href="https://github.com/vkeyadylongest" target="_blank" rel="noopener noreferrer" class="contact-link">
+          github.com/vkeyadylongest
+        </a>
+      </li>
+    </ul>
+    
+    <div class="contact-decoration">
+      <div class="decoration-circle"></div>
+      <div class="decoration-line"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p class="footer-text">&copy; 2025 Victor Amiani. All rights reserved.</p>  
+    <p class="footer-quote">Crafted through obsession, not chance.</p>
+    <div class="footer-decoration">
+      <div class="footer-line"></div>
+      <div class="footer-dot"></div>
+    </div>
+  </div>
+</footer>
+
+
     <script src="script.js"></script>
 </body>
 </html>

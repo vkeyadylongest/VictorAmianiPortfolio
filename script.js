@@ -6,3 +6,7 @@ const typed = new Typed(".typed", {
   backSpeed: 40,
   loop: true,
 });
+
+document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('active');
+});
